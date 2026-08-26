@@ -1,0 +1,56 @@
+
+# a=67
+# print(type(a))
+
+# a=67.87
+# print(type(a))
+
+# a="jaipur"
+# print(type(a))
+
+# a=45
+# print(a)
+
+# a="jaipur"
+# print(a)
+
+# a=28.45
+# print(a)
+
+# print("Hello\aWorld.")
+
+
+# print("Hello\aworld.")
+
+# print( "she\\her" )
+# print( "they\\them" )
+
+# print('It"s her choice')
+
+# Escape Sequence	Description	Example Output
+
+# \n	New line	Hello\nWorld → Hello
+# World
+# \t	Horizontal tab	Hello\tWorld → Hello World
+# \r	Carriage return	Hello\rWorld → World
+# \b	Backspace	Helloo\b → Hello
+# \f	Form feed	Rarely used
+# \v	Vertical feed	Rarely used
+# \a	Bell (alert)	May beep on some systems
+# \\	Backslash	\\ → \
+# \'	Single quote	\' → '
+# \"	Double quote	\" → "
+
+# print("It's her choice.")
+
+# print("Hello This is\n line feed or newline. \n")
+# print("Hello This is\b backspace. \n")
+# print("Hello This is\a alert or bell. \n")
+# print("Hello This is\f form feed. \n")
+# print("Hello This is\v vertical tab. \n")
+# print("Hello This is\r carriage return. \n")
+# print("Hello This is\t horizontal tab. \n")
+# print("Hello This is\\ backslash. \n")
+# print("Hello This is\' single quote. \n")
+# print("Hello This is\" double quote. \n")
+

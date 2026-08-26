@@ -1,0 +1,5 @@
+a="delhi"
+
+print("hello",a, "i am from python")
+
+print(f"hello {a} i am from python")

@@ -1,0 +1,41 @@
+a = 25
+
+print(a)
+
+a = 45.98
+
+print(a)
+
+a = "bhiwadi"
+
+print(a)
+
+a, b, c, d = 24, 45, 87, 90
+
+print(a, b, c, d)
+
+
+print(45, 76.86, 45, "Jaipur")
+
+print("hello\\world")
+
+print("hello\fworld")
+
+print("hello\aworld")
+
+print("hello\"world")
+
+print("hello\'world")
+
+a = 34
+print(type(a))
+
+a = 34.87
+print(type(a))
+
+a = ""
+print(type(a))
+
+a = True
+print(type(a))
+

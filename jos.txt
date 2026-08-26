@@ -1,0 +1,39 @@
+a = "+765489"
+print(type(a))
+
+a = +76895
+print(type(a))
+
+a = -87695
+print(type(a))
+
+a = 6789.986
+print(type(a))
+
+a = True
+print(type(a))
+
+a = False
+print(type(a))
+
+a = "+75904.7598"
+print(type(a))
+
+a = +8604.8749
+print(type(a))
+
+a = 87.98
+print(int(a))
+
+a = 98
+print(str(a))
+
+a = 87
+print(float(a))
+
+a = "87.09"
+print(str(a))
+
+a = +97094.974
+print(type(a))
+

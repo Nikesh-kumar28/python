@@ -1,0 +1,16 @@
+a=25
+ 
+print(type(a))
+
+a=45.87
+
+print(type(a))
+
+a=""
+print(type(a))
+
+a="delhi"
+
+print("hello", a, "i m from python")
+
+print(f" hello {a} i m from python")

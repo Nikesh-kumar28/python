@@ -1,0 +1,26 @@
+Even or Odd Number This program asks the user to enter a number, and then checks whether the number is even or odd. If the number is divisible by 2 (i.e., remainder is 0), it prints "It's an Even Number." Otherwise, it prints "It's an Odd Number."
+
+Positive, Negative, or Zero This program takes an integer input from the user and determines whether the number is positive, negative, or zero.
+
+Age Category Checker This program asks the user to input their age and then classifies them into different categories: Child: If their age is 10 or below. Teenager: If their age is between 11 and 18. Adult: If their age is between 19 and 35. Senior: If their age is 36 or older.
+
+Grade Calculator This program asks the user to input their score (between 0 and 100) and then gives the corresponding letter grade. A: 90–100 B: 80–89 C: 70–79 D: 60–69 F: Below 60
+
+Vowel or Consonant Checker This program asks the user to input a single letter and checks if it's a vowel (A, E, I, O, U) or a consonant. If the input is not a valid alphabet letter, it will print an error message.
+
+Simple Login System This program simulates a simple login system. The user is asked to input a username and password. If both match the preset correct username and password, the program prints a success message. Otherwise, it prints an error message.
+
+Number Comparison This program asks the user to input three numbers and compares them. It prints which of the three numbers is the largest.
+
+Days in a Month This program asks the user to input a month number (1-12). It then tells the number of days in that month: January, March, May, July, August, October, December: 31 days April, June, September, November: 30 days February: 29 days (assuming a leap year)
+
+Concept Of True ( 1 ) and False ( 0 ) Values
+Any non 0 value is a True ( 1 ) value ( 1, 4, 5, -5, -6 )
+0 is considered as a False ( 0 ) Value
+Any non empty array or string are also True ( 1 ) value ( [ 1, 2, 3 ], “Test” )
+Any empty array or string are also False ( 0 ) value ( [], “” )
+int
+float
+str
+bool
+type

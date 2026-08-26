@@ -1,0 +1,615 @@
+# Lists are one of the most fundamental and versatile data structures in Python.
+# They are ordered, mutable (changeable) sequences of items. 
+# This means you can store a collection of items, the order in which you add them is preserved,
+# and you can modify them after they've been created.
+# In a List we separate data using , operator
+
+# What is a List?
+
+# Think of a list as a container that can hold various items, like a shopping list or a to-do list.
+# Each item in the list has a specific position, called an index.
+
+#     Ordered: The items have a defined order, and that order will not change.
+#     Mutable: You can change, add, or remove items after the list has been created.
+#     Heterogeneous: Lists can contain items of different data types (integers, strings, floats, even other lists or objects).
+
+# [ 2334 ,45 ,56 ,67 ,68 ,78 ]
+
+# numbers = [ 2334 ,45 ,56 ,67 ,68 ,78 ]
+# print( numbers )
+
+# print( numbers[-3] )
+
+# print([ 23, 34 ,45 ,56 ,67 ,68 ,78 ][0])
+# print([ 23, 34 ,45 ,56 ,67 ,68 ,78 ])
+
+# number = [12.23, 34, 54.45, 34,234.34]
+# print(number)
+# print( type(number[-2]) )
+
+
+# data = [ 23, 234.3, True, "vipin", False, [1,2,3] ]
+# print(data)
+# print(type(data[-2]))
+
+# Data manipulation in list
+# data[0] = 90
+# print(data)
+
+# a = [ 10, 20, True, "india", False, [1,2,3] ]
+# b = a[3]
+# print(b)
+# print(b[0])
+# # Data manipulation in list
+# print(a[3][0])
+# print(a[-1][-1])
+# print(a)
+
+# abc = [ "Vipin", 25, "Jaipur", 302020, True, [ "Test", 43, [23242, [ 234234]] ] ]
+
+# abc = [ "Vipin",
+#        25,
+#        "Jaipur",
+#        302020,
+#        True,
+#        [ "Test", 43, [56, [ 234234 ]] ]
+#     ]
+
+# print( abc[5] )
+# print( abc[5][2] )
+# print( abc[5][2][-1] )
+# print( abc[5][2][-1][-1] )
+
+
+# a = [ [ [ [ 123 ] ] ] ]
+# [ [ [ 123 ] ] ]
+# [ [ 123 ] ]
+# [ 123 ]
+# 123
+
+# print(a[0][0][0][0] )
+ 
+# Reference Variable
+
+# a = 34
+# b = a
+# print(a, b)
+# a = 23
+# print(a, b)
+
+# a = [ "sdf", 1, 4, 5 ,6  ]
+# b = a
+# print( a, b )
+# b[0] = "Vipin"
+# print( a, b )
+
+# numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+# Get elements from index 2 up to (but not including) index 6
+# print(f"Slice [2:6]: {numbers[2:8]}")   
+
+# # Get elements from the beginning up to index 5
+# print(f"Slice [:5]: {numbers[:5]}")    
+
+# Get elements from index 7 to the end
+# print(f"Slice [7:]: {numbers[7:]}")    
+
+# # Get a copy of the entire list
+# print(f"Slice [:]: {numbers[:]}") 
+
+# # Get every second element
+# print(f"Slice [::4]: {numbers[::4]}")  
+
+# # Reverse the list using slicing
+# print(f"Reversed slice [::-1]: {numbers[::-1]}") 
+
+# print(f"Slice [1:8:2]: {numbers[-8:-1:2]}")  
+
+# numbers = [123, 34, 5, 23, 5, 23, 566, 88, 98]
+# print(numbers[-3: -8 : -2])
+
+# my_list = ["apple", "banana", "cherry", "date"]
+# print(my_list[1][2:4])
+
+# Change a single element
+# my_list[1] = "grape"
+# print(f"Modified single element: {my_list}") 
+
+# Change a slice of elements
+# my_list[ 0:2 ] = ["mango", "blueberry"]
+# print(f"Modified slice: {my_list}") 
+# Change a slice of elements
+# my_list[ 0:3 ] = ["mango", "blueberry"]
+# print(f"Modified slice: {my_list}") 
+# my_list[ 0:-1 ] = ["mango", "blueberry"]
+# print(f"Modified slice: {my_list}") 
+
+
+# Replace a slice with more or fewer elements (length can change)
+# my_list[2:4] = ["mango", "orange", "guava"]
+# print(f"Replaced slice with different length: {my_list}") 
+
+# Operations
+
+# list1 = [8, 2, "abc"]
+# list2 = [3, 4, "xyz"]
+
+# Concatenation
+# combined_list = list1 + list2 
+# print(f"Concatenated list: {combined_list}") 
+
+# Repetition
+# repeated_list = list1 * 3
+# print(f"Repeated list: {repeated_list}") 
+
+# Comparison
+
+# list1 = [18, 2, "abc"]
+# list2 = [18, 4, "abc"]
+
+# print( list1 >= list2 )
+# print( list1 < list2 )
+# print( list1 == list2 )
+
+
+# Membership
+# print(f"Is 2 in list1? {2 in list1}")     
+# print(f"Is 5 not in list2? {5 not in list2}")
+
+# a = [ 1, 2, 3 , [ 4, 5 ] ]
+
+# print( 2 in a )
+# print( 5 in a )
+# print( 5 in a[-1] )
+# print( [4, 5 ] in a )
+
+
+# Identity operator
+# a = [1,2]
+# b = a
+
+# print(a is b)
+
+# Methods:
+# Insert
+# if we give an invalid +ve index value then it will add the data in the end of the list
+# if we give an invalid -ve index then it will add the data in the 0 index
+# -ve index values in index method auto do a -1 for ex insert(-1, "xyz") it will add the data to -2 index
+
+# if we have multiple duplicate then the .remove method will only remove the fist accuracy
+
+
+# my_list = ["apple", "banana", "cherry", "banana", 123, [1, 2]]
+
+# Append
+# my_list.append("date")
+# print(my_list)
+
+# Insert
+# my_list.insert(3, "grape")
+# print(f"After insert: {my_list}") 
+
+# my_list.insert( -2, "mango")
+# print(my_list)
+
+# a = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+# print(a)
+
+# a.append([ 1,2,3,4 ])
+# print(a)
+
+# a.extend([ 1,2,3,4 ])
+# print(a)
+
+# my_list = ["apple", "banana", "cherry", "banana", 123, [1, 2]]
+
+# Remove
+# my_list.remove("apple")
+
+# print(f"After remove: {my_list}") 
+
+# print("After remove: ", my_list ) 
+
+# a = 23
+# print(a)
+
+# del a
+# print(a)
+
+# del my_list[-2]
+# print(f"After remove: {my_list}") 
+
+# my_list = ["apple", "banana", "cherry", "banana"]
+#  Pop (last item)
+# my_list.pop(-1)
+# print(my_list)
+
+# print(f"Popped item (last): {popped_item}, List: {my_list}") 
+
+# my_list = ["apple", "banana", "cherry", "banana"]
+
+# print(my_list.pop())
+# print(my_list)
+
+# a = "vipin"
+# print(a.upper())
+# print(a)
+
+# Pop (at index)
+# popped_item_at_index = my_list.pop(0)
+# print(f"Popped item (index 1): {popped_item_at_index}, List: {my_list}") 
+
+# numbers = [5, 2, 8, 1, 9, 11]
+
+# Using .sort() (in-place)
+# numbers.sort( reverse=True )
+# print(numbers)
+
+# print(numbers) 
+# [11, 9, 8, 5, 2, 1]
+
+# # Sorting a list of strings
+# words = ["banana", "apple", "vipia", "cherry", "vipin"]
+# words.sort( )
+# print(f"Sorted words: {words}") 
+
+# sorted_list = sorted("sjhfygr4ikpok093jf09")
+# print("".join(sorted_list))
+
+# Reverse sort
+# numbers.sort(reverse=True)
+# print(f"Reverse sorted in-place: {numbers}") 
+
+# my_list = [1, 2, 3, 2, 4, 2]
+
+# print(f"Count of 2: {my_list.count(2)}") 
+# print(f"Count of 67: {my_list.count(67)}") 
+
+# my_list = ["apple", "banana", "cherry", "banana"]
+# number_of_banana = my_list.count("banana")
+# print(number_of_banana)
+
+# counter = 1
+# while counter <= number_of_banana:
+#     my_list.remove("banana")
+#     counter += 1
+# print(my_list)
+
+# Index
+# my_list = ["apple", "banana", "cherry", "banana"]
+# print( my_list.index("banana") )
+
+
+# my_list = [1, 2, 3, 2, 4, 2, 8]
+# print(my_list.index(2))
+# print(f"Index of 1: {my_list.index(1)}") 
+# print(f"Index of 2: {my_list.index(2)}") 
+# print(f"Index of 2: {my_list.index(2, 2)}") 
+
+
+# a = [5, 6]
+# b = [1, 2]
+
+# a.append(b)
+# print(a)
+
+# my_list = [ 1, 23 ,334, 34 ]
+
+# # print( my_list[ :: -1 ] )
+# # print(my_list)
+
+# my_list.reverse()
+# print(my_list)
+
+# a = 23
+# b = 34
+# print(a,b)
+# a = 65
+# print(a,b)
+
+# a = [1, 2, 3]
+# b = a
+# print(a, b)
+# b.pop()
+# print(a, b)
+
+
+# a = [ 34, 34,5 ,23, 12, 565 ]
+# b = a.copy()
+# b.append(342)
+# print(a)
+# print(b)
+
+# a = [ 34, 34,5 ,23, 12, 565 ]
+# a.clear()
+# a = []
+# print(a)
+
+# a = [ 1, 2 ,3, 34, "saa", "abc", "xyz" ]
+
+# a.clear() # a = []
+# print(a)
+
+# a = ["hello", "how", "are", "you"]
+
+# b = len(a)
+# print(b)
+
+# i = 0
+# while i < b:
+#     print( a[i] )
+#     i += 1
+
+
+# i = 1
+# number_list = []
+# while i <= 10:
+
+#     number = int(input("Enter A Number: "))
+#     i += 1
+#     number_list.append(number)
+
+# print(number_list)
+
+# i = 1
+# number_list = []
+
+# while i <= 10:
+
+#     number = int(input("Enter A Number: "))
+#     if number > 0:
+#         i += 1
+#         number_list.append(number)
+
+# print(number_list)
+
+# print("-----".join( ["hello", "how", "are", "you"] ))
+
+# "".join()
+# print(b)
+
+# a = ['my', 'name', 'is', 'vipin']
+# b = "------".join(a)
+# print(b)
+
+# a = """I am from jaipur
+# And Jaipur Is In Raj
+# I Live In India"""
+
+# a = ['I am from jaipur\nAnd Jaipur Is ', ' Raj\nI Live ', ' ', 'dia']
+
+# print(a.split("In"))
+
+# a = ['20', '5', '2026']
+
+# print( "".join( a ) )
+
+# a = "ABCDEFGH"
+# print( "-".join(a) )
+
+# Type Conversion
+
+# a = (1,2,3,4,5)
+# a = "Jaipur"
+# a = list(a)
+
+# print(a)
+
+# number = [234 , 345, 12, 3456778, 198348, 10844, 984]
+# print(number)
+# print(number[-3])
+
+# a = [234, 45.67, 'nikku', 9087, [23354]]
+# print(a)
+# print(a[4])
+
+# a = [234, 45.67, 'nikku', 9087, [23354]]
+# print(a)
+# print(a[-1])
+
+# a = [234, 45.67, 'nikku', 9087, [23354]]
+# print(234, 45.67, 'nikku', 9087)
+
+# a = [234.67, 3455, 'jacks', -23345, [234.76]]
+# print(a)
+# print(type(a[2]))
+
+# a = [234.67, 3455, 'jacks', -23345, [234.76]]
+# print(a)
+# print(type(a[-2]))
+
+# data = [234, True, 'nikesh', False, [1,2,3,4]]
+# print(data)
+# print(type(data[-1]))
+
+# data = [234, True, 'nikesh', False, [1,2,3,4]]
+# print(data)
+# print(type(data[3]))
+
+# data = [234, True, 'nikesh', False, [1,2,3,4]]
+# print(data)
+# print(type(data[2]))
+
+# abc = [123, 456, 456, True, 23.456, ["nikesh", 123, [12345, [6787 ] ] ] ]
+# print(abc[5])
+
+# abc = [123, 456, 456, True, 23.456, ["nikesh", 123, [12345, [6787 ] ] ] ]
+# print(abc[5][2])
+
+# abc = [123, 456, 456, True, 23.456, ["nikesh", 123, [12345, [6787 ] ] ] ]
+# print(abc[5][2][-1])
+
+# abc = [123, 456, 456, True, 23.456, ["nikesh", 123, [12345, [6787 ] ] ] ]
+# print(abc[5][2][-1][-1])
+
+# abc = [7364, 73364, 948490, 1234, 98364, 923744, ["nnnn", 874, True,[234 [3984] ] ] ]
+# print(abc[6][2][-1][-1])
+
+# a = [ [ [ [ [ 123 ] ] ] ] ]
+# print(a[0][0][0][0])
+
+#### refrence variable
+
+# a = 34
+# b = a
+# print(a,b)
+# a = 23
+# print(a,b)
+
+# a = ['ghjk', 12234, 35475, 928475,92389]
+# b = a
+# print(a,b)
+# b[0] = 'nikesh'
+# print(a,b)
+
+
+###### data manipulation
+
+# a = [0,1, 2, 3, 4, 5, 6,]
+# print(a[0])
+# a[0] = 98
+# print(a)
+
+# b = [8734, 947, 98847, 947,947]
+# print(b[4])
+# b[4] = 1234556780997
+# print(b)
+
+
+##### identity opreator
+
+# a = ['ghjk', 12234, 35475, 928475,92389]
+# b =  ['ghjk', 12234, 35475, 928475,92389]
+# print(a is b)
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[2:6]: {numbers[2:8]}")
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[:5]: {numbers[:5]}")
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[7:]: {numbers[7:]}")
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[:]: {numbers[:]}")
+
+# numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[::4]: {numbers[::4]}")
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"reversedslice[::-1]: {numbers[::-1]}")
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[::-3]: {numbers[::-3]}")
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(f"slice[1:8:2]: {numbers[-8:-1:2]}")
+
+# numbers = [123, 345, 456, 678, 789, 879, 987]
+# print(numbers[-3:-8:-2])
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# print(my_list[1][2:4])
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# print(my_list[2][-3:-1])
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# print(my_list[3][-4:-2:-1])
+
+# a = ["india", "france", "usa", "japan"]
+# print(a[0][0])
+# print(a[0][2])
+# print(a[-1][-1])
+
+# a = [
+#     [10, 20, 30],
+#     [40, 50, 60],
+#     [70,80,90]
+# ]
+# print(a[0])
+# print(a[2])
+# print(a[2][0])
+# print(a[1][2])
+
+# students = [
+#     ["rahul", 20],
+#     ["priya", 21],
+#     ["amit", 19]
+# ]
+# print(students[0][0])
+# print(students[-1])
+# print(students[-1][-1])
+
+# data = [
+#     100,
+#     "python",
+#     [10, 20, 30],
+#     True,
+#     ["india", "japan", "usa"]
+# ]
+# print(data[1])
+# print(data[2][0])
+# print(data[4][-1])
+# print(data[2][-1])
+
+# a = [
+#     "hello",
+#     [1, 2, 3],
+#     "india",
+#     [True, False, [100, 200, 300]]
+# ]
+# print(a[0][1])
+# print(a[1][2])
+# print(a[3][2][1])
+
+# log_entry = "[error]===system clash==="
+# print(log_entry.rstrip("="))
+
+# document = "final_report.pdf"
+# print(document.endswith(".pdf"))
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# print(my_list[1][2:4])
+# my_list[1] = "grape"
+# print(f" modified single element: {my_list}")
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# my_list[2] = "grape", "gavava"
+# print(f"{my_list}")
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# my_list[0:2] = ['mango', 'blueberry']
+# print(f" {my_list}")
+
+# my_list = ["gavava", "orange", "onion", "mango"]
+# my_list[1:2] = ['papaya', 'dragonfruit']
+# print(f" {my_list}")
+
+# my_list = ["apple", "banana", "cheery", "date"]
+# my_list[2:4] = ["mango", 'orange', 'gavava']
+# print(f" {my_list}")
+
+# list1 = [8, 90, 'yrt']
+# list2 = [23, 678, 'vfx']
+# combinedlist = [list1 + list2]
+# print(f" {combinedlist}")
+
+# list1 = [98, 89, 'iuy']
+# list2 = [89, 65, 'imj']
+# repeted_list = list1 * 4
+# print(f" {repeted_list}")
+
+# a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print(a[::-1])
+# print(a[::-2])
+# print(a[-5:])
+# print(a[:-5])
+# print(a[-8:-3])
+# print(a[-3:-8:-1])
+# print(a[-2:-10:-2])
+
+

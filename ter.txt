@@ -1,0 +1,4 @@
+print(78, 45, 65.87, "Jaipur")
+
+a, b, c = 10, 36, 75
+print(a, b, c )

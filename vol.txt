@@ -1,0 +1,41 @@
+a = "+789609"
+print(type(a))
+
+a =int(a)
+print(type(a))
+
+a = 4.8
+print(type(a))
+
+a = "7890.75"
+print(type(a))
+
+a= float(a)
+print(type(a))
+
+a = int(a)
+print(type(a))
+
+
+
+print("enter some data")
+input()
+
+a = input("enter some data")
+
+print(a)
+print(type(a))
+
+print(a)
+a = input()
+
+print("nikku")
+input()
+
+a = "-8765.09"
+print(type(a))
+
+a = True
+print(type(a))
+
+

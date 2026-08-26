@@ -1,0 +1,8 @@
+a=67
+print(type(a))
+
+a=67.87
+print(type(a))
+
+a="jaipur"
+print(type(a))

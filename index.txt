@@ -1,0 +1,8 @@
+a=45
+print(a)
+
+a="jaipur"
+print(a)
+
+a=28.45
+print(a)

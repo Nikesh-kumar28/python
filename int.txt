@@ -1,0 +1,10 @@
+input()
+print("enter some data")
+
+a = input("enter some data")
+
+print(a)
+print(type(a))
+
+print(a)
+a = input()
