@@ -150,12 +150,43 @@
 
 
 # Find the largest number without using max().
+# a = (10, 20, 30, 40, 50, 60)
 
+# largest = a[0]
 
+# for x in a:
+#     if x > largest:
+#         largest = x
+# print( largest)
+
+# a = (23, 45, 67, 6789, 789, 6789)
+
+# largest = a[0]
+# for x in a:
+#     if x > largest:
+#         largest = x
+# print(largest)
 
 
 # Copy tuple elements into a list in reverse order using a loop.
+# a = (10, 20, 30, 40, 50, 60)
+# b = []
+# for x in a:
+#     b.insert(0, x)
+#     print(b)
+
+# a = (10, 20, 30, 40, 50, 60)
+# b = []
+
+# for x in a:
+#     b.insert(0, x)
+# print(b)
+
+
 # Find the index of a specific element without using .index().
+
+
+
 # Given a nested tuple, use nested loops to print every individual number.
 
 
