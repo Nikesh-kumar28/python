@@ -183,10 +183,41 @@
 # print(b)
 
 
+# for i in range(5,-1,-1):
+#     print(i)
+
+
+# i = 5
+
+# while i >= 0:
+#     print(i)
+#     i -= 1
+
+
 # Find the index of a specific element without using .index().
+# a = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+# data = 8
 
+# for x in range(len(a)):
+#     if a[x] == data:
+#       print(x)
 
+# a = (1, 2, 3, 4, 5, 6, 7, 8, 9, 7 , 7)
+# data = 7
+
+# for x in range(len(a)):
+#     if a[x] == data:
+#         print(x)
+#         break
 
 # Given a nested tuple, use nested loops to print every individual number.
+# a = ((1, 2, 3), (3, 4, 5), (6, 7, 8) )
+# for x in a:
+#     for y in x:
+#        print(y)
 
+# a = ((1, 2, 3), (3, 4, 5), (6, 7, 8) )
 
+# for x in a:
+#     for y in x:
+#         print(y)
