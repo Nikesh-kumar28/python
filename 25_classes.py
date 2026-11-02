@@ -404,19 +404,24 @@
 # ?Access a class attribute
 # print(f""Buddy is a member of the {my_dog.species} species")
 
-class car:
+# class car:
 
-    def __init__(self, brand= "tata", color="white"):
-        self.brand = brand
-        self.color = color
-        self.engine_status  = "off"
+#     def __init__(self, brand= "tata", color="white"):
+#         self.brand = brand
+#         self.color = color
+#         self.engine_status  = "off"
 
-    def start_engine(self):
-        if self.engine_status == "on":
-            print(f"the {self.brand}'s engine is now on.")
-            self.engine_status = "off"
-        else:
-            print(f"the {self.brand}'s engine is now off.")  
-            self.engine_status = "on"
+#     def start_engine(self):
+#         if self.engine_status == "on":
+#             print(f"the {self.brand}'s engine is now on.")
+#             self.engine_status = "off"
+#         else:
+#             print(f"the {self.brand}'s engine is now off.")  
+#             self.engine_status = "on"
 
-a.car()
+# a = car()
+# a.start_engine()
+# print(a.engine_status)
+# a.start_engine()
+# print(a.engine_status)
+
