@@ -347,4 +347,76 @@
 
 # Constructor with Argument
 
-class 
+# class yt:
+
+#     species = "GS"
+
+#     def __init__(self, age = 2):
+#         self.age = age
+#         print("bhaiya object ban gya")
+
+#     def eat(self):
+#         print(f"hungry right now")
+
+#     def bark(self):
+#         print(self.age)
+#         print(f"says woof!")
+
+# a = yt(15)
+# a.bark()
+
+# class dog:
+
+#     species = "FGH"
+
+#     def __init__(self, name="tom", age=2):
+#         self.dog_name = name
+#         self.age = age
+#         self.is_hungry = True
+
+#     def bark(self):
+#         print(f"{self.dog_name} says woof!")
+
+#     def eat(self):
+#         if self.is_hungry:
+#             print(f"{self.dog_name} is eating...")
+#             self.is_hungry = False
+#         else:
+#             print(f"{self.dog_name} is not hungry right now...")
+#             self.is_hungry = True
+
+# a = dog("tommy")
+# a.bark()
+# a.eat()
+
+# my_dog = dog()
+# my_dog.bark()
+
+# your_dog = dog("tuffy", 3)
+# your_dog.bark()
+# your_dog.eat()
+# your_dog.eat()
+# a.eat()
+
+# Access instance attributes
+# print(f"my dog's name is {my_dog.name} and he is {my_dog.age} years old")
+
+# ?Access a class attribute
+# print(f""Buddy is a member of the {my_dog.species} species")
+
+class car:
+
+    def __init__(self, brand= "tata", color="white"):
+        self.brand = brand
+        self.color = color
+        self.engine_status  = "off"
+
+    def start_engine(self):
+        if self.engine_status == "on":
+            print(f"the {self.brand}'s engine is now on.")
+            self.engine_status = "off"
+        else:
+            print(f"the {self.brand}'s engine is now off.")  
+            self.engine_status = "on"
+
+a.car()
